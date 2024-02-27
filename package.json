@@ -1,5 +1,6 @@
 {
   "name": "movies_lib",
+  "homepage": "https://seivanesandro.github.io/movies_lib/",
   "private": false,
   "version": "0.0.2",
   "type": "module",
