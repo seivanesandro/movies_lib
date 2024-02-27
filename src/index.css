@@ -1,0 +1,138 @@
+* {
+    font-family: Roboto, Helvetica !important;
+    box-sizing: border-box !important;
+}
+
+body {
+    background: #262222 !important;
+    color: #fafafa !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.3em !important;
+    color: rgb(123, 122, 122) !important;
+    text-transform: capitalize !important;
+}
+h2::selection {
+    color: rgb(233, 246, 0);
+    background: black;
+}
+
+p {
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 1.8em;
+    color: rgb(123, 122, 122) !important;
+    text-transform: capitalize !important;
+}
+p::selection {
+    color: rgb(233, 246, 0);
+    background: black;
+}
+
+a {
+    text-decoration: none !important;
+    color: rgb(123, 122, 122) !important;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: 0.5s !important;
+}
+.navbar ul a.active {
+    color: #24c6dc !important;
+    border-bottom: 0.1px solid #24c6dc;
+    padding: 0 0 6px 0 !important;
+    transition: ease-out 0.5s !important;
+}
+a:hover {
+    color: #24c6dc !important;
+    transition: 0.5s !important;
+}
+
+a::selection {
+    color: rgb(233, 246, 0);
+    background: black;
+}
+
+input {
+    outline: none !important;
+    text-align: left;
+    transition: all 0.3s linear;
+    color: #3c2edc !important;
+}
+
+input:focus {
+    outline: #24c6dc solid 0.5s !important;
+    border: #24c6dc 0.5s !important;
+    transition: all 0.1s forwards 0.5s !important;
+}
+input:hover {
+    box-shadow:
+        0 0 0.2rem #24c6dc,
+        0 0 0.2rem #fafafa,
+        0 0 0.1rem #24c6dc !important;
+    outline: #24c6dc solid !important;
+    border: #24c6dc !important;
+    box-decoration-break: none !important;
+    transition: all 0.1s forwards !important;
+}
+input::selection {
+    color: rgb(233, 246, 0);
+    background: black;
+}
+
+span {
+    color: rgb(123, 122, 122);
+    font-size: 0.9em;
+    font-weight: 600;
+}
+span::selection {
+    color: rgb(233, 246, 0);
+    background: black;
+}
+
+strong {
+    font-size: 2.3rem;
+    color: #24c6dc;
+}
+label {
+    color: #fafafa;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: left;
+    text-transform: capitalize !important;
+    gap: 0.1rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+label::selection {
+    color: rgb(233, 246, 0);
+    background: black;
+}
+
+.app_movies_lib {
+    background-color: transparent;
+}
+.main {
+    margin-top: 10rem !important;
+}
+
+/*
+css original 
+
+*{
+font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+
+}
+
+*/
