@@ -5,9 +5,10 @@ import './index.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import {
-    BrowserRouter,
+    //BrowserRouter,
     Routes,
-    Route
+    Route,
+    HashRouter
 } from 'react-router-dom';
 
 //components
@@ -24,7 +25,7 @@ ReactDOM.createRoot(
     document.getElementById('root')
 ).render(
     <React.StrictMode>
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route element={<App />}>
                     <Route
@@ -63,6 +64,6 @@ ReactDOM.createRoot(
                     />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </React.StrictMode>
 );
