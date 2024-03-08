@@ -146,7 +146,7 @@ Error generating stack: `+o.message+`
         padding: 1rem 4rem;
         transition: 0.5s !important;
     }
-`,rr=({movie:e,showLink:t})=>d.jsx(d.Fragment,{children:d.jsxs(Sy,{className:"card",children:[d.jsx(ky,{src:wy+e.poster_path,alt:e.title,className:"card-image rounded-top"}),d.jsxs(Cy,{className:"card-body",children:[d.jsx("h2",{children:e.title}),d.jsxs(Ny,{className:"card-content",children:[d.jsx(Wf,{color:"gold",size:20}),d.jsx("span",{children:e.vote_average})]}),d.jsx(Ey,{className:"card-footer w-100 pt-5",children:t&&d.jsx($y,{href:`/movie/${e._id}`,children:"Details"})})]})]})});rr.propTypes={movie:Gn.object.isRequired,showLink:Gn.bool.isRequired};rr.defaultProps={movie:{},showLink:!0};const jy=ll`
+`,rr=({movie:e,showLink:t})=>d.jsx(d.Fragment,{children:d.jsxs(Sy,{className:"card",children:[d.jsx(ky,{src:wy+e.poster_path,alt:e.title,className:"card-image rounded-top"}),d.jsxs(Cy,{className:"card-body",children:[d.jsx("h2",{children:e.title}),d.jsxs(Ny,{className:"card-content",children:[d.jsx(Wf,{color:"gold",size:20}),d.jsx("span",{children:e.vote_average})]}),d.jsx(Ey,{className:"card-footer w-100 pt-5",children:t&&d.jsx($y,{href:`/movie/${e.id}`,children:"Details"})})]})]})});rr.propTypes={movie:Gn.object.isRequired,showLink:Gn.bool.isRequired};rr.defaultProps={movie:{},showLink:!0};const jy=ll`
 to{
     transform: rotate(360deg); 
   }
