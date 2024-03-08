@@ -8,7 +8,8 @@ import {
     //BrowserRouter,
     Routes,
     Route,
-    HashRouter
+    //Switch,
+    HashRouter,
 } from 'react-router-dom';
 
 //components
@@ -27,42 +28,44 @@ ReactDOM.createRoot(
     <React.StrictMode>
         <HashRouter>
             <Routes>
-                <Route element={<App />}>
-                    <Route
-                        path="/"
-                        element={<Home />}
-                    />
-                    <Route
-                        path="/populary"
-                        element={
-                            <PopularMovies />
-                        }
-                    />
-                    <Route
-                        path="/upcoming"
-                        element={
-                            <UpCommingMovies />
-                        }
-                    />
-                    <Route
-                        path="/tvseriespopular"
-                        element={
-                            <TvSeriesPopular />
-                        }
-                    />
-                    <Route
-                        path="tvserie/:id"
-                        element={<TvSerie />}
-                    />
-                    <Route
-                        path="movie/:id"
-                        element={<Movie />}
-                    />
-                    <Route
-                        path="search"
-                        element={<Search />}
-                    />
-                </Route>
+                
+                    <Route element={<App />}>
+                        <Route
+                            path="/"
+                            element={<Home />}
+                        />
+                        <Route
+                            path="/populary"
+                            element={
+                                <PopularMovies />
+                            }
+                        />
+                        <Route
+                            path="/upcoming"
+                            element={
+                                <UpCommingMovies />
+                            }
+                        />
+                        <Route
+                            path="/tvseriespopular"
+                            element={
+                                <TvSeriesPopular />
+                            }
+                        />
+                        <Route
+                            path="tvserie/:id"
+                            element={<TvSerie />}
+                        />
+                        <Route
+                            path="movie/:id"
+                            element={<Movie />}
+                        />
+                        <Route
+                            path="search"
+                            element={<Search />}
+                        />
+                    </Route>
+
             </Routes>
         </HashRouter>
     </React.StrictMode>
