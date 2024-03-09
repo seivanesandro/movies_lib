@@ -1,4 +1,5 @@
 //import React from 'react'
+import { Link  } from 'react-router-dom'
 import PropTypes from 'prop-types';
 import { BsFillStarFill } from 'react-icons/bs';
 
@@ -131,10 +132,13 @@ const CardMovie = ({ movie, showLink }) => {
 
                     <CardFooter className="card-footer w-100 pt-5">
                         {showLink && (
-                            <StyleLink
-                                to={`/movie/${movie.id}`}
-                            >
-                                Details
+                            <StyleLink>
+                                <Link
+                                    to={`/movie/${movie.id}`}
+                                >
+                                    {' '}
+                                    Details
+                                </Link>
                             </StyleLink>
                         )}
                     </CardFooter>

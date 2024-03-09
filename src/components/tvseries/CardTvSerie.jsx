@@ -1,6 +1,7 @@
 //import React from 'react'
 import PropTypes from 'prop-types';
 import { BsFillStarFill } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 import styled, {
     keyframes
@@ -131,10 +132,13 @@ const CardTvSerie = ({ tvserie, showLink }) => {
 
                     <CardFooter className="card-footer w-100 pt-5">
                         {showLink && (
-                            <StyleLink
-                                href={`/tvserie/${tvserie.id}`}
-                            >
-                                Details
+                            <StyleLink>
+                                <Link
+                                    to={`/movie/${tvserie.id}`}
+                                >
+                                    {' '}
+                                    Details
+                                </Link>
                             </StyleLink>
                         )}
                     </CardFooter>
