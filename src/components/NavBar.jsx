@@ -1,6 +1,7 @@
 import { useState } from 'react';
 //import PropTypes from 'prop-types'
 import {
+    Link,
     NavLink,
     useNavigate
 } from 'react-router-dom';
@@ -47,11 +48,13 @@ const NavBar = () => {
             >
                 <MDBContainer fluid>
                     <MDBNavbarBrand href="/">
-                        <img
-                            src={LogoBrand}
-                            alt="brand-img"
-                            className="w-75"
-                        />
+                        <Link to={'/'}>
+                            <img
+                                src={LogoBrand}
+                                alt="brand-img"
+                                className="w-75"
+                            />
+                        </Link>
                     </MDBNavbarBrand>
 
                     <MDBNavbarToggler

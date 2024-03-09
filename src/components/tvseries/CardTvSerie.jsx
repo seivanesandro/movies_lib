@@ -134,7 +134,7 @@ const CardTvSerie = ({ tvserie, showLink }) => {
                         {showLink && (
                             <StyleLink>
                                 <Link
-                                    to={`/movie/${tvserie.id}`}
+                                    to={`/tvserie/${tvserie.id}`}
                                 >
                                     {' '}
                                     Details
