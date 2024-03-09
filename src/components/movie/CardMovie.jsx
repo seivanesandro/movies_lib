@@ -132,7 +132,7 @@ const CardMovie = ({ movie, showLink }) => {
                     <CardFooter className="card-footer w-100 pt-5">
                         {showLink && (
                             <StyleLink
-                                href={`/movie/${movie.id}`}
+                                to={`/movie/${movie.id}`}
                             >
                                 Details
                             </StyleLink>
