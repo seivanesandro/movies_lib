@@ -141,7 +141,7 @@ const NavBar = () => {
                         >
                             <input
                                 className="form-control"
-                                placeholder="Search your Movie"
+                                placeholder="Search for movies or series"
                                 aria-label="Search"
                                 type="Search"
                                 onChange={e => {
