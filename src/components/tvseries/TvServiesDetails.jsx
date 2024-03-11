@@ -97,6 +97,9 @@ const CardBody = styled.div`
     @media only screen and (${devices.tablet}) {
         margin: 2rem 1rem 0 8.5rem;
     }
+    @media only screen and (${devices.iphone14}) {
+        margin: 2rem 1rem 0 4.5rem;
+    }
     @media only screen and (${devices.mobileG}) {
         margin: 2rem 1rem 0 2.5rem;
     }

@@ -41,6 +41,9 @@ const CardMovieContainer = styled.div`
     @media only screen and (${devices.tablet}) {
         width: 41%;
     }
+    @media only screen and (${devices.iphone14}) {
+        width: 101%;
+    }
 
     @media only screen and (${devices.mobileG}) {
         width: 100%;
@@ -80,32 +83,6 @@ const CardFooter = styled.div`
     margin: 2rem auto;
 `;
 
-const StyleLink = styled.a`
-    font-size: 0.9rem !important;
-    border-radius: 6px;
-    background: #24c6dc !important;
-    color: #333 !important;
-    padding: 1rem 4em;
-    cursor: pointer;
-    transition: 0.5s !important;
-
-    &:hover {
-        color: #fafafa !important;
-        background: #1ea0b1 !important;
-        box-shadow: 0 0 0.2rem #333;
-        transition: 0.5s !important;
-    }
-
-    @media only screen and (${devices.mobileP}) {
-        padding: 1rem 3rem;
-        transition: 0.5s !important;
-    }
-    @media only screen and (${devices.tablet}) {
-        padding: 1rem 4rem;
-        transition: 0.5s !important;
-    }
-`;
-
 const CardTvSerie = ({ tvserie, showLink }) => {
     return (
         <>
@@ -132,14 +109,13 @@ const CardTvSerie = ({ tvserie, showLink }) => {
 
                     <CardFooter className="card-footer w-100 pt-5">
                         {showLink && (
-                            <StyleLink>
-                                <Link
-                                    to={`/tvserie/${tvserie.id}`}
-                                >
-                                    {' '}
-                                    Details
-                                </Link>
-                            </StyleLink>
+                            <Link
+                                className="style"
+                                to={`/tvserie/${tvserie.id}`}
+                            >
+                                {' '}
+                                Details
+                            </Link>
                         )}
                     </CardFooter>
                 </CardBody>

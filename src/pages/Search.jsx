@@ -88,15 +88,13 @@ const Search = () => {
                 </p>
             )}
             {searchMovies.length === 0 && (
-                
                 <ContainerLoading className="container-loading">
                     <Loading
                         speedborder={1}
                         size={5}
                     />
                 </ContainerLoading>
-            )
-            }
+            )}
             <HomeMain className="home-main">
                 {searchMovies.length > 0 &&
                     searchMovies.map(
