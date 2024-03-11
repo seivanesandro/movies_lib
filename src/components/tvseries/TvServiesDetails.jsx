@@ -183,20 +183,21 @@ const TvSeriesDetails = ({ tvserie }) => {
                             </span>
                         </label>
                         <label>
-                            Serie Popularity
-                            <span>
-                                {
-                                    tvserie.popularity
-                                }{' '}
-                                %
-                            </span>
-                        </label>
-                        <label>
                             Serie Status
                             <span>
                                 {tvserie.status}
                             </span>
                         </label>
+                        <label>
+                            Serie rating
+                            <span>
+                                {
+                                    tvserie.vote_average
+                                }{' '}
+                                %
+                            </span>
+                        </label>
+
                         <label>
                             total votes in IMDB
                             <span>

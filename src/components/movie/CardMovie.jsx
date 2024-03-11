@@ -1,5 +1,5 @@
 //import React from 'react'
-import { Link  } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { BsFillStarFill } from 'react-icons/bs';
 
@@ -24,7 +24,7 @@ const Show = keyframes`
     }
 `;
 
-const CardMovieContainer = styled.div`
+const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 15%;
@@ -109,7 +109,7 @@ const StyleLink = styled.a`
 const CardMovie = ({ movie, showLink }) => {
     return (
         <>
-            <CardMovieContainer className="card">
+            <CardContainer className="card">
                 <ContainerImg
                     src={
                         imageURL +
@@ -143,7 +143,7 @@ const CardMovie = ({ movie, showLink }) => {
                         )}
                     </CardFooter>
                 </CardBody>
-            </CardMovieContainer>
+            </CardContainer>
         </>
     );
 };

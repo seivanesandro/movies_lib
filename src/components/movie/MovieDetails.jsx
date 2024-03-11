@@ -130,6 +130,7 @@ const MovieDetails = ({ movie }) => {
             currency: 'USD'
         });
     };
+
     return (
         <>
             <CardMovieContainer className="card-movie-container">
@@ -157,10 +158,11 @@ const MovieDetails = ({ movie }) => {
                             </span>
                         </label>
                         <label>
-                            movie popularity
+                            original language
                             <span>
-                                {movie.popularity}{' '}
-                                %
+                                {
+                                    movie.original_language
+                                }
                             </span>
                         </label>
                         <label>
@@ -186,13 +188,14 @@ const MovieDetails = ({ movie }) => {
                             </span>
                         </label>
                         <label>
-                            movie hours
+                            movie time
                             <span>
-                                {movie.runtime} H
+                                {movie.runtime}{' '}
+                                minutes
                             </span>
                         </label>
                         <label>
-                            total votes in IMDB
+                            total votes in IMdb
                             <span>
                                 {movie.vote_count}{' '}
                                 votes
