@@ -109,6 +109,7 @@ const CardMovie = ({ movie, showLink }) => {
                     <CardFooter className="card-footer w-100 pt-5">
                         {showLink && (
                             <Link
+                            disable
                                 className="style"
                                 to={`/movie/${movie.id}`}
                             >
